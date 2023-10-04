@@ -1,68 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Your Name - Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Name - Personal Website</title>
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <h1>Your Name</h1>
-      <p>Web Developer</p>
-    </div>
-  </header>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer</p>
+    </header>
 
-  <main>
-    <section id="education" class="info-section">
-      <h2>Education</h2>
-      <p>Your University - Bachelor's in Computer Science</p>
+    <section id="education">
+        <h2>Education</h2>
+        <!-- Add your education details here -->
     </section>
 
-    <section id="work-experience" class="info-section">
-      <h2>Work Experience</h2>
-      <p>Company ABC - Web Developer</p>
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <!-- Add your work experience details here -->
     </section>
 
-    <section id="projects" class="info-section">
-      <h2>Projects</h2>
-      <p>Project XYZ - Description of the project.</p>
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Add your project details here -->
     </section>
 
-    <section id="skills" class="info-section">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+    <section id="skills">
+        <h2>Skills</h2>
+        <!-- Add your skills here -->
     </section>
 
-    <section id="contact" class="info-section">
-      <h2>Contact Information</h2>
-      <p>Email: your-email@example.com</p>
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Add your contact information here -->
     </section>
 
-    <section id="social-media" class="info-section">
-      <h2>Social Media</h2>
-      <ul>
-        <li><a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a></li>
-        <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
-      </ul>
+    <section id="social-media">
+        <h2>Social Media</h2>
+        <!-- Add links to your social media profiles here -->
     </section>
 
-    <section id="chatbot" class="info-section">
-      <h2>Contact Form</h2>
-      <form id="contact-form">
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="button" onclick="sendEmail()">Send</button>
-      </form>
+    <section id="chatbot">
+        <h2>Chatbot</h2>
+        <div id="chat-container">
+            <div id="chat-messages"></div>
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
+        </div>
     </section>
-  </main>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
