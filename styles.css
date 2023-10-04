@@ -2,21 +2,39 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
   }
   
   header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 2em 0;
   }
   
-  section {
-    margin: 20px;
+  .header-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section {
+    margin-bottom: 30px;
   }
   
   h2 {
     color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
   }
   
   ul {
@@ -39,5 +57,19 @@ body {
   textarea {
     height: 100px;
     margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
   }
   
