@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
             // Display user message
             displayMessage(userMessage, "user");
 
-            // Simulate server response (in this case, send an email)
-            simulateServerResponse(userMessage);
+            // Simulate server response (in this case, open email client)
+            sendEmail(userMessage);
 
             // Clear input
             userInput.value = "";
@@ -29,9 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
 
-    function simulateServerResponse(userMessage) {
-        // Simulate sending an email
-        const botMessage = `Your message "${userMessage}" has been sent!`;
-        displayMessage(botMessage, "bot");
+    function sendEmail(userMessage) {
+        // Specify the email address you want to send the email to
+        const emailAddress = "your.email@example.com";
+
+        // Create a mailto link with subject and body
+        const mailtoLink = `mailto:${emailAddress}?subject=New Chat Message&body=${encodeURIComponent(
+            userMessage
+        )}`;
+
+        // Open the user's default email client with the mailto link
+        window.location.href = mailtoLink;
     }
 });
