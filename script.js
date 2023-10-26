@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function sendEmail(userMessage) {
         // Specify the email address you want to send the email to
-        const emailAddress = "your.email@example.com";
+        const emailAddress = "nilinternship3@gmail.com";
 
         // Create a mailto link with subject and body
         const mailtoLink = `mailto:${emailAddress}?subject=New Chat Message&body=${encodeURIComponent(
